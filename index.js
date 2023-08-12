@@ -2,8 +2,10 @@ const express = require("express");
 const app = express();
 const port = 5000;
 const mongoDB = require("./db")
+const cors = require("cors");
 mongoDB();
-//to handle CORS error
+
+app.use(cors())
 app.use((req,res,next)=>{
     res.setHeader("Access-Control-Allow-Origin","https://food-app-psi-six.vercel.app/");// react app address
     res.header(
