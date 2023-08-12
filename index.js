@@ -5,7 +5,7 @@ const mongoDB = require("./db")
 mongoDB();
 //to handle CORS error
 app.use((req,res,next)=>{
-    res.setHeader("Access-Control-Allow-Origin","http://localhost:3000");// react app address
+    res.setHeader("Access-Control-Allow-Origin","https://food-app-psi-six.vercel.app/");// react app address
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
