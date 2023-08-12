@@ -7,7 +7,7 @@ mongoDB();
 
 app.use(cors())
 app.use((req,res,next)=>{
-    res.header("Access-Control-Allow-Origin","https://food-app-psi-six.vercel.app/");// react app address
+    res.header("Access-Control-Allow-Origin","https://food-app-psi-six.vercel.app");// react app address
     res.header(
         "Access-Control-Allow-Headers",
         "Origin, X-Requested-With, Content-Type, Accept"
