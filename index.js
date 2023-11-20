@@ -4,6 +4,8 @@ const port = 5000;
 const mongoDB = require("./db")
 const cors = require("cors");
 mongoDB();
+const bodyParser = require("body-parser");
+router.use(bodyParser.json());
 
 app.use(cors())
 app.use((req,res,next)=>{
